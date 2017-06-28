@@ -27,7 +27,7 @@ module.exports = {
     // },
     entry: {
         index: './src/index.js',
-        vendor: ['lodash', 'moment'] // 将不会改变的库单独生成一个bundle，更好的利用浏览器缓存
+        vendor: ['babel-polyfill', 'lodash', 'moment'] // 将不会改变的库单独生成一个bundle，更好的利用浏览器缓存
     },
     output: {
         path: path.resolve(__dirname, 'dist'), //output 目录对应一个绝对路径。

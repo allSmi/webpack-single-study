@@ -1,8 +1,11 @@
 import './index.css';
-import Library from './library';
+
+import 'babel-polyfill';
 import moment from 'moment';
 import _ from 'lodash';
 import $$$ from 'jquery'; // 这里引用的是script下载的jquery，没有打包到webpack中
+
+import Library from './library';
 require('demo-alias');
 
 if (module.hot) {
@@ -181,3 +184,18 @@ console.log(map.has('name')); // true
 console.log(map.get('name')); // "张三"
 console.log(map.has('title')); // true
 console.log(map.get('title')); // "Author"
+
+//
+let arrayLike = {
+    length: 2,
+    0: 'a',
+    1: 'b'
+};
+
+for (let x of Array.from(arrayLike)) {
+    console.log(x);
+}
+
+// ----Symbol----
+let sa = Symbol();
+console.log(typeof sa);
