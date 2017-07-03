@@ -34,7 +34,7 @@
     "build:dev": "set NODE_ENV=dev&&webpack --progress --profile --colors",
     "build:prod": "set NODE_ENV=prod&&webpack --progress --profile --colors",
     "start": "serve",
-    "start1": "set NODE_ENV=dev&&webpack-dev-server --open",
+    "start:dev": "set NODE_ENV=dev&&webpack-dev-server --open",
     "product": "webpack --optimize-minimize --define process.env.NODE_ENV=\"production\"",
     "product1": "webpack -p"
   },
