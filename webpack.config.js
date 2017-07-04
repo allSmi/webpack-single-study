@@ -54,6 +54,7 @@ module.exports = {
         publicPath: '/', // necessary for HMR to know where to load the hot update chunks 确保 publicPath 总是以斜杠(/)开头和结尾
         compress: true, // 是否开启服务器压缩
         port: 9000, // 端口号
+        // open: true,
         // historyApiFallback: true, //???不知道怎么使用  任意的 404 响应可以提供为 index.html 页面
         // historyApiFallback: { // 重写
         //     rewrites: [{
