@@ -1,6 +1,6 @@
 import './index.css';
 
-import 'babel-polyfill';
+// import 'babel-polyfill';
 import moment from 'moment';
 import _ from 'lodash';
 import $$$ from 'jquery'; // 这里引用的是script下载的jquery，没有打包到webpack中
